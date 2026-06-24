@@ -198,6 +198,8 @@ icon_renomear_lote.png
 icon_renomear_lote_small.png
 icon_renovaveis_altura.png
 icon_renovaveis_altura_small.png
+icon_renovaveis_corte.png
+icon_renovaveis_corte_small.png
 icon_renovaveis_estacas.png
 icon_renovaveis_estacas_small.png
 icon_renovaveis_inclinacao.png
