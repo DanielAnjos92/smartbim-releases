@@ -1,5 +1,5 @@
 {
-    "Versao":  "1.1.3",
+    "Versao":  "1.1.4",
     "Arquivos":  [
                      {
                          "Nome":  "ClosedXML.dll",
@@ -34,12 +34,12 @@
                      {
                          "Nome":  "SmartBIM.Civil3D.deps.json",
                          "Tamanho":  4539,
-                         "Sha256":  "6c79481d3de70153467030cdb3a97adcf5a80e33ac512398df4b03c7741676d5"
+                         "Sha256":  "58dd9ab9a5730c34ef9b3495d0f6040a9f7d11259a4babca2bf9049d6672b076"
                      },
                      {
                          "Nome":  "SmartBIM.Civil3D.dll",
                          "Tamanho":  2802688,
-                         "Sha256":  "00a95e4db8135002be5b5312bd853759c01944c995b3dc7be33cedd7fd6117d7"
+                         "Sha256":  "bf4696723943e1ba6dacab3134ccee7e1f42f8d3b5dfee4947bf2a95176bb464"
                      },
                      {
                          "Nome":  "XLParser.dll",
