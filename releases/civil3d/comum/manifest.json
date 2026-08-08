@@ -1,0 +1,15 @@
+{
+    "Versao":  "1.1.2",
+    "Arquivos":  [
+                     {
+                         "Nome":  "PackageContents.xml",
+                         "Tamanho":  26753,
+                         "Sha256":  "534b599044763f28650d08738e8f57cd746ad9bcd8536a264b1286b4c9e31f7b"
+                     },
+                     {
+                         "Nome":  "SmartBIM_Civil3D_Updater.exe",
+                         "Tamanho":  10752,
+                         "Sha256":  "1811016aba6d37c37823e08606786b42306bc85a047da8d7734b3cda96cd8efd"
+                     }
+                 ]
+}

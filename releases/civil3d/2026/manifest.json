@@ -1,0 +1,50 @@
+{
+    "Versao":  "1.1.2",
+    "Arquivos":  [
+                     {
+                         "Nome":  "ClosedXML.dll",
+                         "Tamanho":  1438208,
+                         "Sha256":  "a8a236a05bd81e301a15a248d5ab9b44af1f3df5f729f96532c56ebf4139bc2c"
+                     },
+                     {
+                         "Nome":  "DocumentFormat.OpenXml.dll",
+                         "Tamanho":  6025128,
+                         "Sha256":  "588d07bdc0dd828c7db07d04af42c47d48b092d92cecbb7ff6e63f9741b48974"
+                     },
+                     {
+                         "Nome":  "ExcelNumberFormat.dll",
+                         "Tamanho":  30720,
+                         "Sha256":  "d7c45b8e4e1027831e2fc8cdf941faf51d28a66feacfcaaa737da73262e7b507"
+                     },
+                     {
+                         "Nome":  "Irony.dll",
+                         "Tamanho":  144896,
+                         "Sha256":  "843270493384c6e1ed1b1f92d631944b08f5e881c3c7a2210824f1899152ccbd"
+                     },
+                     {
+                         "Nome":  "Newtonsoft.Json.dll",
+                         "Tamanho":  712464,
+                         "Sha256":  "22c649f75fce5be7c7ccda8880473b634ef69ecf33f5d1ab8ad892caf47d5a07"
+                     },
+                     {
+                         "Nome":  "SixLabors.Fonts.dll",
+                         "Tamanho":  1135616,
+                         "Sha256":  "e1e2f107e7c78fb859f1b23383107a125acd8b3a7470140850daa6f6f6c45d9f"
+                     },
+                     {
+                         "Nome":  "SmartBIM.Civil3D.deps.json",
+                         "Tamanho":  4537,
+                         "Sha256":  "75255589a55536f67b804cee1850be7aa52ed3f7f0cd1f2f5c68c73ac8960765"
+                     },
+                     {
+                         "Nome":  "SmartBIM.Civil3D.dll",
+                         "Tamanho":  2801664,
+                         "Sha256":  "f9c531332cbf426007f46f9c15bb6bd24dc196e7864c7f8cd3fdf7ea8f855037"
+                     },
+                     {
+                         "Nome":  "XLParser.dll",
+                         "Tamanho":  54784,
+                         "Sha256":  "a1211fe42e65b2c51f283c6588a298989e50b988ccc82a504a9b2a7f46c54b9c"
+                     }
+                 ]
+}

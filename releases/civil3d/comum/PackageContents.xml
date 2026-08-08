@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Autoload bundle do Civil 3D. Coloque a pasta .bundle inteira em:
+       %ProgramFiles%\Autodesk\ApplicationPlugins\   (todos os usuarios, via instalador)
+     ou %APPDATA%\Autodesk\ApplicationPlugins\        (so o usuario, via deploy.bat)
+     O Civil 3D carrega sozinho ao abrir. Comando: NOTAVALA
+
+     UM bundle, QUATRO versoes do Civil 3D: cada <Components> abaixo casa uma serie
+     do AutoCAD (RuntimeRequirements) com a pasta de binarios correspondente.
+       Civil 3D 2024 = R24.3 (.NET Framework 4.8)  -> Contents/2024
+       Civil 3D 2025 = R25.0 (.NET 8)              -> Contents/2025
+       Civil 3D 2026 = R25.1 (.NET 8)              -> Contents/2026
+       Civil 3D 2027 = R26.0 (.NET 10)             -> Contents/2027
+     Gere os binarios com tools\build_all.bat (compila so o que estiver instalado). -->
+<ApplicationPackage SchemaVersion="1.0"
+                    Version="1.1.1"
+                    ProductCode="{7C3E2A10-5B44-4E9A-9C21-A1B2C3D4E5F6}"
+                    Name="SmartBIM Civil 3D"
+                    Description="Ferramentas SmartBIM para Civil 3D"
+                    Author="SmartBIM"
+                    AppNameSpace="smartbim.civil3d">
+  <CompanyDetails Name="SmartBIM" Email="SmartBIM@outlook.com.br" />
+
+  <!-- ===== Civil 3D 2024 (R24.3 / .NET Framework 4.8) ===== -->
+  <Components Description="Civil 3D 2024">
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R24.3" SeriesMax="R24.3" />
+    <ComponentEntry AppName="SmartBIM.Civil3D"
+                    Version="1.1.1"
+                    ModuleName="./Contents/2024/SmartBIM.Civil3D.dll"
+                    AppType=".NET"
+                    LoadOnAutoCADStartup="True"
+                    LoadOnCommandInvocation="True">
+        <Commands GroupName="SMARTBIM">
+          <Command Global="COMPARAPONTOS" Local="COMPARAPONTOS" />
+          <Command Global="CONVERTECOGO" Local="CONVERTECOGO" />
+          <Command Global="COORDESTACA" Local="COORDESTACA" />
+          <Command Global="CORRSURF" Local="CORRSURF" />
+          <Command Global="DESCPONTO" Local="DESCPONTO" />
+          <Command Global="DRENAGEM" Local="DRENAGEM" />
+          <Command Global="EDITARCOGO" Local="EDITARCOGO" />
+          <Command Global="EDITDESC" Local="EDITDESC" />
+          <Command Global="EDITELEV" Local="EDITELEV" />
+          <Command Global="ELEVATEXTO" Local="ELEVATEXTO" />
+          <Command Global="ESTAQUEIA" Local="ESTAQUEIA" />
+          <Command Global="EXPCOGO" Local="EXPCOGO" />
+          <Command Global="EXPORTACOGO" Local="EXPORTACOGO" />
+          <Command Global="GRUPOSCOGO" Local="GRUPOSCOGO" />
+          <Command Global="IMPCOGO" Local="IMPCOGO" />
+          <Command Global="IMPORTAPONTOS" Local="IMPORTAPONTOS" />
+          <Command Global="INTCOTA" Local="INTCOTA" />
+          <Command Global="INTERPOLACOTA" Local="INTERPOLACOTA" />
+          <Command Global="INVELEV" Local="INVELEV" />
+          <Command Global="LEGENDACOGO" Local="LEGENDACOGO" />
+          <Command Global="LOCACAO" Local="LOCACAO" />
+          <Command Global="LOTELAYOUT" Local="LOTELAYOUT" />
+          <Command Global="MALHA" Local="MALHA" />
+          <Command Global="MALHACOGO" Local="MALHACOGO" />
+          <Command Global="MALHACOORD" Local="MALHACOORD" />
+          <Command Global="MATSECAO" Local="MATSECAO" />
+          <Command Global="MEMORIAL" Local="MEMORIAL" />
+          <Command Global="MOVERLABEL" Local="MOVERLABEL" />
+          <Command Global="MOVERROTULO" Local="MOVERROTULO" />
+          <Command Global="NOTACORREDOR" Local="NOTACORREDOR" />
+          <Command Global="NOTASERVICO" Local="NOTASERVICO" />
+          <Command Global="NOTATERRA" Local="NOTATERRA" />
+          <Command Global="NOTAVALA" Local="NOTAVALA" />
+          <Command Global="NSCORREDOR" Local="NSCORREDOR" />
+          <Command Global="NSTERRA" Local="NSTERRA" />
+          <Command Global="NSVALA" Local="NSVALA" />
+          <Command Global="NUMERADOR" Local="NUMERADOR" />
+          <Command Global="PAINELSB" Local="PAINELSB" />
+          <Command Global="PERFISLOTE" Local="PERFISLOTE" />
+          <Command Global="PERFTERRA" Local="PERFTERRA" />
+          <Command Global="PLATO" Local="PLATO" />
+          <Command Global="PLATOGRAD" Local="PLATOGRAD" />
+          <Command Global="POLIPONTOS" Local="POLIPONTOS" />
+          <Command Global="PONTOSLOCACAO" Local="PONTOSLOCACAO" />
+          <Command Global="QMATSEC" Local="QMATSEC" />
+          <Command Global="QTALUDE" Local="QTALUDE" />
+          <Command Global="REDEDRENAGEM" Local="REDEDRENAGEM" />
+          <Command Global="REGPONTOS" Local="REGPONTOS" />
+          <Command Global="REGRENUM" Local="REGRENUM" />
+          <Command Global="REGTERRA" Local="REGTERRA" />
+          <Command Global="RENUMCOGO" Local="RENUMCOGO" />
+          <Command Global="ROTULOMASSA" Local="ROTULOMASSA" />
+          <Command Global="SECOES" Local="SECOES" />
+          <Command Global="SECOESCORREDOR" Local="SECOESCORREDOR" />
+          <Command Global="SMARTBIM" Local="SMARTBIM" />
+          <Command Global="SUPCORREDOR" Local="SUPCORREDOR" />
+          <Command Global="TABCOORD" Local="TABCOORD" />
+          <Command Global="TALUDES" Local="TALUDES" />
+          <Command Global="TERRAPLANAR" Local="TERRAPLANAR" />
+          <Command Global="VOLUMESUP" Local="VOLUMESUP" />
+          <Command Global="SBATUALIZAR" Local="SBATUALIZAR" />
+          <Command Global="SBLOGIN" Local="SBLOGIN" />
+          <Command Global="SBLOGOUT" Local="SBLOGOUT" />
+          <Command Global="GERENADMIN" Local="GERENADMIN" />
+          <!-- Smart Utilities Suite -->
+          <Command Global="UTILIDADES" Local="UTILIDADES" />
+          <Command Global="PAINELUTILS" Local="PAINELUTILS" />
+          <Command Global="SUITE" Local="SUITE" />
+          <Command Global="SUSELLAYER" Local="SUSELLAYER" />
+          <Command Global="SUSELTIPO" Local="SUSELTIPO" />
+          <Command Global="SUSELCIVIL" Local="SUSELCIVIL" />
+          <Command Global="SUSELTRAVADA" Local="SUSELTRAVADA" />
+          <Command Global="SUSELPROP" Local="SUSELPROP" />
+          <Command Global="SULAYERMOVER" Local="SULAYERMOVER" />
+          <Command Global="SULAYERRENOMEAR" Local="SULAYERRENOMEAR" />
+          <Command Global="SULAYERESTADOS" Local="SULAYERESTADOS" />
+          <Command Global="SULAYERVAZIAS" Local="SULAYERVAZIAS" />
+          <Command Global="SULAYERREL" Local="SULAYERREL" />
+          <Command Global="SULAYEREXCEL" Local="SULAYEREXCEL" />
+          <Command Global="SUBLOCOATRIB" Local="SUBLOCOATRIB" />
+          <Command Global="SUBLOCOSEL" Local="SUBLOCOSEL" />
+          <Command Global="SUBLOCOTROCA" Local="SUBLOCOTROCA" />
+          <Command Global="SUTEXTOSUBST" Local="SUTEXTOSUBST" />
+          <Command Global="SUTEXTOALT" Local="SUTEXTOALT" />
+          <Command Global="SUTEXTOEXP" Local="SUTEXTOEXP" />
+          <Command Global="SUCIVILRENOMEAR" Local="SUCIVILRENOMEAR" />
+          <Command Global="SUCIVILEST" Local="SUCIVILEST" />
+          <Command Global="SUCIVILESTILO" Local="SUCIVILESTILO" />
+          <Command Global="SUCIVILLABEL" Local="SUCIVILLABEL" />
+          <Command Global="SUEXPSELECAO" Local="SUEXPSELECAO" />
+          <Command Global="SULIMPPURGE" Local="SULIMPPURGE" />
+          <Command Global="SULIMPDUP" Local="SULIMPDUP" />
+          <Command Global="SUCONTASEL" Local="SUCONTASEL" />
+          <Command Global="SUISOLAR" Local="SUISOLAR" />
+        </Commands>
+    </ComponentEntry>
+  </Components>
+
+  <!-- ===== Civil 3D 2025 (R25.0 / .NET 8) ===== -->
+  <Components Description="Civil 3D 2025">
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R25.0" SeriesMax="R25.0" />
+    <ComponentEntry AppName="SmartBIM.Civil3D"
+                    Version="1.1.1"
+                    ModuleName="./Contents/2025/SmartBIM.Civil3D.dll"
+                    AppType=".NET"
+                    LoadOnAutoCADStartup="True"
+                    LoadOnCommandInvocation="True">
+        <Commands GroupName="SMARTBIM">
+          <Command Global="COMPARAPONTOS" Local="COMPARAPONTOS" />
+          <Command Global="CONVERTECOGO" Local="CONVERTECOGO" />
+          <Command Global="COORDESTACA" Local="COORDESTACA" />
+          <Command Global="CORRSURF" Local="CORRSURF" />
+          <Command Global="DESCPONTO" Local="DESCPONTO" />
+          <Command Global="DRENAGEM" Local="DRENAGEM" />
+          <Command Global="EDITARCOGO" Local="EDITARCOGO" />
+          <Command Global="EDITDESC" Local="EDITDESC" />
+          <Command Global="EDITELEV" Local="EDITELEV" />
+          <Command Global="ELEVATEXTO" Local="ELEVATEXTO" />
+          <Command Global="ESTAQUEIA" Local="ESTAQUEIA" />
+          <Command Global="EXPCOGO" Local="EXPCOGO" />
+          <Command Global="EXPORTACOGO" Local="EXPORTACOGO" />
+          <Command Global="GRUPOSCOGO" Local="GRUPOSCOGO" />
+          <Command Global="IMPCOGO" Local="IMPCOGO" />
+          <Command Global="IMPORTAPONTOS" Local="IMPORTAPONTOS" />
+          <Command Global="INTCOTA" Local="INTCOTA" />
+          <Command Global="INTERPOLACOTA" Local="INTERPOLACOTA" />
+          <Command Global="INVELEV" Local="INVELEV" />
+          <Command Global="LEGENDACOGO" Local="LEGENDACOGO" />
+          <Command Global="LOCACAO" Local="LOCACAO" />
+          <Command Global="LOTELAYOUT" Local="LOTELAYOUT" />
+          <Command Global="MALHA" Local="MALHA" />
+          <Command Global="MALHACOGO" Local="MALHACOGO" />
+          <Command Global="MALHACOORD" Local="MALHACOORD" />
+          <Command Global="MATSECAO" Local="MATSECAO" />
+          <Command Global="MEMORIAL" Local="MEMORIAL" />
+          <Command Global="MOVERLABEL" Local="MOVERLABEL" />
+          <Command Global="MOVERROTULO" Local="MOVERROTULO" />
+          <Command Global="NOTACORREDOR" Local="NOTACORREDOR" />
+          <Command Global="NOTASERVICO" Local="NOTASERVICO" />
+          <Command Global="NOTATERRA" Local="NOTATERRA" />
+          <Command Global="NOTAVALA" Local="NOTAVALA" />
+          <Command Global="NSCORREDOR" Local="NSCORREDOR" />
+          <Command Global="NSTERRA" Local="NSTERRA" />
+          <Command Global="NSVALA" Local="NSVALA" />
+          <Command Global="NUMERADOR" Local="NUMERADOR" />
+          <Command Global="PAINELSB" Local="PAINELSB" />
+          <Command Global="PERFISLOTE" Local="PERFISLOTE" />
+          <Command Global="PERFTERRA" Local="PERFTERRA" />
+          <Command Global="PLATO" Local="PLATO" />
+          <Command Global="PLATOGRAD" Local="PLATOGRAD" />
+          <Command Global="POLIPONTOS" Local="POLIPONTOS" />
+          <Command Global="PONTOSLOCACAO" Local="PONTOSLOCACAO" />
+          <Command Global="QMATSEC" Local="QMATSEC" />
+          <Command Global="QTALUDE" Local="QTALUDE" />
+          <Command Global="REDEDRENAGEM" Local="REDEDRENAGEM" />
+          <Command Global="REGPONTOS" Local="REGPONTOS" />
+          <Command Global="REGRENUM" Local="REGRENUM" />
+          <Command Global="REGTERRA" Local="REGTERRA" />
+          <Command Global="RENUMCOGO" Local="RENUMCOGO" />
+          <Command Global="ROTULOMASSA" Local="ROTULOMASSA" />
+          <Command Global="SECOES" Local="SECOES" />
+          <Command Global="SECOESCORREDOR" Local="SECOESCORREDOR" />
+          <Command Global="SMARTBIM" Local="SMARTBIM" />
+          <Command Global="SUPCORREDOR" Local="SUPCORREDOR" />
+          <Command Global="TABCOORD" Local="TABCOORD" />
+          <Command Global="TALUDES" Local="TALUDES" />
+          <Command Global="TERRAPLANAR" Local="TERRAPLANAR" />
+          <Command Global="VOLUMESUP" Local="VOLUMESUP" />
+          <Command Global="SBATUALIZAR" Local="SBATUALIZAR" />
+          <Command Global="SBLOGIN" Local="SBLOGIN" />
+          <Command Global="SBLOGOUT" Local="SBLOGOUT" />
+          <Command Global="GERENADMIN" Local="GERENADMIN" />
+          <!-- Smart Utilities Suite -->
+          <Command Global="UTILIDADES" Local="UTILIDADES" />
+          <Command Global="PAINELUTILS" Local="PAINELUTILS" />
+          <Command Global="SUITE" Local="SUITE" />
+          <Command Global="SUSELLAYER" Local="SUSELLAYER" />
+          <Command Global="SUSELTIPO" Local="SUSELTIPO" />
+          <Command Global="SUSELCIVIL" Local="SUSELCIVIL" />
+          <Command Global="SUSELTRAVADA" Local="SUSELTRAVADA" />
+          <Command Global="SUSELPROP" Local="SUSELPROP" />
+          <Command Global="SULAYERMOVER" Local="SULAYERMOVER" />
+          <Command Global="SULAYERRENOMEAR" Local="SULAYERRENOMEAR" />
+          <Command Global="SULAYERESTADOS" Local="SULAYERESTADOS" />
+          <Command Global="SULAYERVAZIAS" Local="SULAYERVAZIAS" />
+          <Command Global="SULAYERREL" Local="SULAYERREL" />
+          <Command Global="SULAYEREXCEL" Local="SULAYEREXCEL" />
+          <Command Global="SUBLOCOATRIB" Local="SUBLOCOATRIB" />
+          <Command Global="SUBLOCOSEL" Local="SUBLOCOSEL" />
+          <Command Global="SUBLOCOTROCA" Local="SUBLOCOTROCA" />
+          <Command Global="SUTEXTOSUBST" Local="SUTEXTOSUBST" />
+          <Command Global="SUTEXTOALT" Local="SUTEXTOALT" />
+          <Command Global="SUTEXTOEXP" Local="SUTEXTOEXP" />
+          <Command Global="SUCIVILRENOMEAR" Local="SUCIVILRENOMEAR" />
+          <Command Global="SUCIVILEST" Local="SUCIVILEST" />
+          <Command Global="SUCIVILESTILO" Local="SUCIVILESTILO" />
+          <Command Global="SUCIVILLABEL" Local="SUCIVILLABEL" />
+          <Command Global="SUEXPSELECAO" Local="SUEXPSELECAO" />
+          <Command Global="SULIMPPURGE" Local="SULIMPPURGE" />
+          <Command Global="SULIMPDUP" Local="SULIMPDUP" />
+          <Command Global="SUCONTASEL" Local="SUCONTASEL" />
+          <Command Global="SUISOLAR" Local="SUISOLAR" />
+        </Commands>
+    </ComponentEntry>
+  </Components>
+
+  <!-- ===== Civil 3D 2026 (R25.1 / .NET 8) ===== -->
+  <Components Description="Civil 3D 2026">
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R25.1" SeriesMax="R25.1" />
+    <ComponentEntry AppName="SmartBIM.Civil3D"
+                    Version="1.1.1"
+                    ModuleName="./Contents/2026/SmartBIM.Civil3D.dll"
+                    AppType=".NET"
+                    LoadOnAutoCADStartup="True"
+                    LoadOnCommandInvocation="True">
+        <Commands GroupName="SMARTBIM">
+          <Command Global="COMPARAPONTOS" Local="COMPARAPONTOS" />
+          <Command Global="CONVERTECOGO" Local="CONVERTECOGO" />
+          <Command Global="COORDESTACA" Local="COORDESTACA" />
+          <Command Global="CORRSURF" Local="CORRSURF" />
+          <Command Global="DESCPONTO" Local="DESCPONTO" />
+          <Command Global="DRENAGEM" Local="DRENAGEM" />
+          <Command Global="EDITARCOGO" Local="EDITARCOGO" />
+          <Command Global="EDITDESC" Local="EDITDESC" />
+          <Command Global="EDITELEV" Local="EDITELEV" />
+          <Command Global="ELEVATEXTO" Local="ELEVATEXTO" />
+          <Command Global="ESTAQUEIA" Local="ESTAQUEIA" />
+          <Command Global="EXPCOGO" Local="EXPCOGO" />
+          <Command Global="EXPORTACOGO" Local="EXPORTACOGO" />
+          <Command Global="GRUPOSCOGO" Local="GRUPOSCOGO" />
+          <Command Global="IMPCOGO" Local="IMPCOGO" />
+          <Command Global="IMPORTAPONTOS" Local="IMPORTAPONTOS" />
+          <Command Global="INTCOTA" Local="INTCOTA" />
+          <Command Global="INTERPOLACOTA" Local="INTERPOLACOTA" />
+          <Command Global="INVELEV" Local="INVELEV" />
+          <Command Global="LEGENDACOGO" Local="LEGENDACOGO" />
+          <Command Global="LOCACAO" Local="LOCACAO" />
+          <Command Global="LOTELAYOUT" Local="LOTELAYOUT" />
+          <Command Global="MALHA" Local="MALHA" />
+          <Command Global="MALHACOGO" Local="MALHACOGO" />
+          <Command Global="MALHACOORD" Local="MALHACOORD" />
+          <Command Global="MATSECAO" Local="MATSECAO" />
+          <Command Global="MEMORIAL" Local="MEMORIAL" />
+          <Command Global="MOVERLABEL" Local="MOVERLABEL" />
+          <Command Global="MOVERROTULO" Local="MOVERROTULO" />
+          <Command Global="NOTACORREDOR" Local="NOTACORREDOR" />
+          <Command Global="NOTASERVICO" Local="NOTASERVICO" />
+          <Command Global="NOTATERRA" Local="NOTATERRA" />
+          <Command Global="NOTAVALA" Local="NOTAVALA" />
+          <Command Global="NSCORREDOR" Local="NSCORREDOR" />
+          <Command Global="NSTERRA" Local="NSTERRA" />
+          <Command Global="NSVALA" Local="NSVALA" />
+          <Command Global="NUMERADOR" Local="NUMERADOR" />
+          <Command Global="PAINELSB" Local="PAINELSB" />
+          <Command Global="PERFISLOTE" Local="PERFISLOTE" />
+          <Command Global="PERFTERRA" Local="PERFTERRA" />
+          <Command Global="PLATO" Local="PLATO" />
+          <Command Global="PLATOGRAD" Local="PLATOGRAD" />
+          <Command Global="POLIPONTOS" Local="POLIPONTOS" />
+          <Command Global="PONTOSLOCACAO" Local="PONTOSLOCACAO" />
+          <Command Global="QMATSEC" Local="QMATSEC" />
+          <Command Global="QTALUDE" Local="QTALUDE" />
+          <Command Global="REDEDRENAGEM" Local="REDEDRENAGEM" />
+          <Command Global="REGPONTOS" Local="REGPONTOS" />
+          <Command Global="REGRENUM" Local="REGRENUM" />
+          <Command Global="REGTERRA" Local="REGTERRA" />
+          <Command Global="RENUMCOGO" Local="RENUMCOGO" />
+          <Command Global="ROTULOMASSA" Local="ROTULOMASSA" />
+          <Command Global="SECOES" Local="SECOES" />
+          <Command Global="SECOESCORREDOR" Local="SECOESCORREDOR" />
+          <Command Global="SMARTBIM" Local="SMARTBIM" />
+          <Command Global="SUPCORREDOR" Local="SUPCORREDOR" />
+          <Command Global="TABCOORD" Local="TABCOORD" />
+          <Command Global="TALUDES" Local="TALUDES" />
+          <Command Global="TERRAPLANAR" Local="TERRAPLANAR" />
+          <Command Global="VOLUMESUP" Local="VOLUMESUP" />
+          <Command Global="SBATUALIZAR" Local="SBATUALIZAR" />
+          <Command Global="SBLOGIN" Local="SBLOGIN" />
+          <Command Global="SBLOGOUT" Local="SBLOGOUT" />
+          <Command Global="GERENADMIN" Local="GERENADMIN" />
+          <!-- Smart Utilities Suite -->
+          <Command Global="UTILIDADES" Local="UTILIDADES" />
+          <Command Global="PAINELUTILS" Local="PAINELUTILS" />
+          <Command Global="SUITE" Local="SUITE" />
+          <Command Global="SUSELLAYER" Local="SUSELLAYER" />
+          <Command Global="SUSELTIPO" Local="SUSELTIPO" />
+          <Command Global="SUSELCIVIL" Local="SUSELCIVIL" />
+          <Command Global="SUSELTRAVADA" Local="SUSELTRAVADA" />
+          <Command Global="SUSELPROP" Local="SUSELPROP" />
+          <Command Global="SULAYERMOVER" Local="SULAYERMOVER" />
+          <Command Global="SULAYERRENOMEAR" Local="SULAYERRENOMEAR" />
+          <Command Global="SULAYERESTADOS" Local="SULAYERESTADOS" />
+          <Command Global="SULAYERVAZIAS" Local="SULAYERVAZIAS" />
+          <Command Global="SULAYERREL" Local="SULAYERREL" />
+          <Command Global="SULAYEREXCEL" Local="SULAYEREXCEL" />
+          <Command Global="SUBLOCOATRIB" Local="SUBLOCOATRIB" />
+          <Command Global="SUBLOCOSEL" Local="SUBLOCOSEL" />
+          <Command Global="SUBLOCOTROCA" Local="SUBLOCOTROCA" />
+          <Command Global="SUTEXTOSUBST" Local="SUTEXTOSUBST" />
+          <Command Global="SUTEXTOALT" Local="SUTEXTOALT" />
+          <Command Global="SUTEXTOEXP" Local="SUTEXTOEXP" />
+          <Command Global="SUCIVILRENOMEAR" Local="SUCIVILRENOMEAR" />
+          <Command Global="SUCIVILEST" Local="SUCIVILEST" />
+          <Command Global="SUCIVILESTILO" Local="SUCIVILESTILO" />
+          <Command Global="SUCIVILLABEL" Local="SUCIVILLABEL" />
+          <Command Global="SUEXPSELECAO" Local="SUEXPSELECAO" />
+          <Command Global="SULIMPPURGE" Local="SULIMPPURGE" />
+          <Command Global="SULIMPDUP" Local="SULIMPDUP" />
+          <Command Global="SUCONTASEL" Local="SUCONTASEL" />
+          <Command Global="SUISOLAR" Local="SUISOLAR" />
+        </Commands>
+    </ComponentEntry>
+  </Components>
+
+  <!-- ===== Civil 3D 2027 (R26.0 / .NET 10) ===== -->
+  <Components Description="Civil 3D 2027">
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R26.0" SeriesMax="R26.0" />
+    <ComponentEntry AppName="SmartBIM.Civil3D"
+                    Version="1.1.1"
+                    ModuleName="./Contents/2027/SmartBIM.Civil3D.dll"
+                    AppType=".NET"
+                    LoadOnAutoCADStartup="True"
+                    LoadOnCommandInvocation="True">
+        <Commands GroupName="SMARTBIM">
+          <Command Global="COMPARAPONTOS" Local="COMPARAPONTOS" />
+          <Command Global="CONVERTECOGO" Local="CONVERTECOGO" />
+          <Command Global="COORDESTACA" Local="COORDESTACA" />
+          <Command Global="CORRSURF" Local="CORRSURF" />
+          <Command Global="DESCPONTO" Local="DESCPONTO" />
+          <Command Global="DRENAGEM" Local="DRENAGEM" />
+          <Command Global="EDITARCOGO" Local="EDITARCOGO" />
+          <Command Global="EDITDESC" Local="EDITDESC" />
+          <Command Global="EDITELEV" Local="EDITELEV" />
+          <Command Global="ELEVATEXTO" Local="ELEVATEXTO" />
+          <Command Global="ESTAQUEIA" Local="ESTAQUEIA" />
+          <Command Global="EXPCOGO" Local="EXPCOGO" />
+          <Command Global="EXPORTACOGO" Local="EXPORTACOGO" />
+          <Command Global="GRUPOSCOGO" Local="GRUPOSCOGO" />
+          <Command Global="IMPCOGO" Local="IMPCOGO" />
+          <Command Global="IMPORTAPONTOS" Local="IMPORTAPONTOS" />
+          <Command Global="INTCOTA" Local="INTCOTA" />
+          <Command Global="INTERPOLACOTA" Local="INTERPOLACOTA" />
+          <Command Global="INVELEV" Local="INVELEV" />
+          <Command Global="LEGENDACOGO" Local="LEGENDACOGO" />
+          <Command Global="LOCACAO" Local="LOCACAO" />
+          <Command Global="LOTELAYOUT" Local="LOTELAYOUT" />
+          <Command Global="MALHA" Local="MALHA" />
+          <Command Global="MALHACOGO" Local="MALHACOGO" />
+          <Command Global="MALHACOORD" Local="MALHACOORD" />
+          <Command Global="MATSECAO" Local="MATSECAO" />
+          <Command Global="MEMORIAL" Local="MEMORIAL" />
+          <Command Global="MOVERLABEL" Local="MOVERLABEL" />
+          <Command Global="MOVERROTULO" Local="MOVERROTULO" />
+          <Command Global="NOTACORREDOR" Local="NOTACORREDOR" />
+          <Command Global="NOTASERVICO" Local="NOTASERVICO" />
+          <Command Global="NOTATERRA" Local="NOTATERRA" />
+          <Command Global="NOTAVALA" Local="NOTAVALA" />
+          <Command Global="NSCORREDOR" Local="NSCORREDOR" />
+          <Command Global="NSTERRA" Local="NSTERRA" />
+          <Command Global="NSVALA" Local="NSVALA" />
+          <Command Global="NUMERADOR" Local="NUMERADOR" />
+          <Command Global="PAINELSB" Local="PAINELSB" />
+          <Command Global="PERFISLOTE" Local="PERFISLOTE" />
+          <Command Global="PERFTERRA" Local="PERFTERRA" />
+          <Command Global="PLATO" Local="PLATO" />
+          <Command Global="PLATOGRAD" Local="PLATOGRAD" />
+          <Command Global="POLIPONTOS" Local="POLIPONTOS" />
+          <Command Global="PONTOSLOCACAO" Local="PONTOSLOCACAO" />
+          <Command Global="QMATSEC" Local="QMATSEC" />
+          <Command Global="QTALUDE" Local="QTALUDE" />
+          <Command Global="REDEDRENAGEM" Local="REDEDRENAGEM" />
+          <Command Global="REGPONTOS" Local="REGPONTOS" />
+          <Command Global="REGRENUM" Local="REGRENUM" />
+          <Command Global="REGTERRA" Local="REGTERRA" />
+          <Command Global="RENUMCOGO" Local="RENUMCOGO" />
+          <Command Global="ROTULOMASSA" Local="ROTULOMASSA" />
+          <Command Global="SECOES" Local="SECOES" />
+          <Command Global="SECOESCORREDOR" Local="SECOESCORREDOR" />
+          <Command Global="SMARTBIM" Local="SMARTBIM" />
+          <Command Global="SUPCORREDOR" Local="SUPCORREDOR" />
+          <Command Global="TABCOORD" Local="TABCOORD" />
+          <Command Global="TALUDES" Local="TALUDES" />
+          <Command Global="TERRAPLANAR" Local="TERRAPLANAR" />
+          <Command Global="VOLUMESUP" Local="VOLUMESUP" />
+          <Command Global="SBATUALIZAR" Local="SBATUALIZAR" />
+          <Command Global="SBLOGIN" Local="SBLOGIN" />
+          <Command Global="SBLOGOUT" Local="SBLOGOUT" />
+          <Command Global="GERENADMIN" Local="GERENADMIN" />
+          <!-- Smart Utilities Suite -->
+          <Command Global="UTILIDADES" Local="UTILIDADES" />
+          <Command Global="PAINELUTILS" Local="PAINELUTILS" />
+          <Command Global="SUITE" Local="SUITE" />
+          <Command Global="SUSELLAYER" Local="SUSELLAYER" />
+          <Command Global="SUSELTIPO" Local="SUSELTIPO" />
+          <Command Global="SUSELCIVIL" Local="SUSELCIVIL" />
+          <Command Global="SUSELTRAVADA" Local="SUSELTRAVADA" />
+          <Command Global="SUSELPROP" Local="SUSELPROP" />
+          <Command Global="SULAYERMOVER" Local="SULAYERMOVER" />
+          <Command Global="SULAYERRENOMEAR" Local="SULAYERRENOMEAR" />
+          <Command Global="SULAYERESTADOS" Local="SULAYERESTADOS" />
+          <Command Global="SULAYERVAZIAS" Local="SULAYERVAZIAS" />
+          <Command Global="SULAYERREL" Local="SULAYERREL" />
+          <Command Global="SULAYEREXCEL" Local="SULAYEREXCEL" />
+          <Command Global="SUBLOCOATRIB" Local="SUBLOCOATRIB" />
+          <Command Global="SUBLOCOSEL" Local="SUBLOCOSEL" />
+          <Command Global="SUBLOCOTROCA" Local="SUBLOCOTROCA" />
+          <Command Global="SUTEXTOSUBST" Local="SUTEXTOSUBST" />
+          <Command Global="SUTEXTOALT" Local="SUTEXTOALT" />
+          <Command Global="SUTEXTOEXP" Local="SUTEXTOEXP" />
+          <Command Global="SUCIVILRENOMEAR" Local="SUCIVILRENOMEAR" />
+          <Command Global="SUCIVILEST" Local="SUCIVILEST" />
+          <Command Global="SUCIVILESTILO" Local="SUCIVILESTILO" />
+          <Command Global="SUCIVILLABEL" Local="SUCIVILLABEL" />
+          <Command Global="SUEXPSELECAO" Local="SUEXPSELECAO" />
+          <Command Global="SULIMPPURGE" Local="SULIMPPURGE" />
+          <Command Global="SULIMPDUP" Local="SULIMPDUP" />
+          <Command Global="SUCONTASEL" Local="SUCONTASEL" />
+          <Command Global="SUISOLAR" Local="SUISOLAR" />
+        </Commands>
+    </ComponentEntry>
+  </Components>
+
+</ApplicationPackage>

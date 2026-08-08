@@ -1,0 +1,70 @@
+{
+    "Versao":  "1.1.2",
+    "Arquivos":  [
+                     {
+                         "Nome":  "ClosedXML.dll",
+                         "Tamanho":  1438720,
+                         "Sha256":  "98bddcab39b3142820566371ae80998a0d4bcf2bdbe7650a658d8cc832775a4f"
+                     },
+                     {
+                         "Nome":  "DocumentFormat.OpenXml.dll",
+                         "Tamanho":  6024616,
+                         "Sha256":  "e386adb5fa9f4dbc7e11d59a42ac8a2415310b05d333ebaf5fb4e7424eeaaab5"
+                     },
+                     {
+                         "Nome":  "ExcelNumberFormat.dll",
+                         "Tamanho":  30208,
+                         "Sha256":  "03ccc71a42833102ef54ae9ecf39d9d62c0491c17359aa37d1d2ef0ec7397d04"
+                     },
+                     {
+                         "Nome":  "Irony.dll",
+                         "Tamanho":  144384,
+                         "Sha256":  "553d56d75aa948c238f09c97fa41797ead90f26f6217aeaf0d35f5f3339e4f24"
+                     },
+                     {
+                         "Nome":  "Newtonsoft.Json.dll",
+                         "Tamanho":  711952,
+                         "Sha256":  "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
+                     },
+                     {
+                         "Nome":  "SixLabors.Fonts.dll",
+                         "Tamanho":  1142272,
+                         "Sha256":  "3d811d1c37a1f0e17f365f00603029eb53e240526537e2cd99fe4227aabf36aa"
+                     },
+                     {
+                         "Nome":  "SmartBIM.Civil3D.dll",
+                         "Tamanho":  2804224,
+                         "Sha256":  "e5454e51c8804a6bab97d96b3e3c42838796b24233b65c6ebd0c67a3a3792882"
+                     },
+                     {
+                         "Nome":  "System.Buffers.dll",
+                         "Tamanho":  20856,
+                         "Sha256":  "accccfbe45d9f08ffeed9916e37b33e98c65be012cfff6e7fa7b67210ce1fefb"
+                     },
+                     {
+                         "Nome":  "System.IO.Packaging.dll",
+                         "Tamanho":  46184,
+                         "Sha256":  "85e04bf12239ed095ce5ff772e342d3b31ebd13faea036ed448be85b0aae5bff"
+                     },
+                     {
+                         "Nome":  "System.Memory.dll",
+                         "Tamanho":  141184,
+                         "Sha256":  "8e76318e8b06692abf7dab1169d27d15557f7f0a34d36af6463eff0fe21213c7"
+                     },
+                     {
+                         "Nome":  "System.Numerics.Vectors.dll",
+                         "Tamanho":  115856,
+                         "Sha256":  "1d3ef8698281e7cf7371d1554afef5872b39f96c26da772210a33da041ba1183"
+                     },
+                     {
+                         "Nome":  "System.Runtime.CompilerServices.Unsafe.dll",
+                         "Tamanho":  16968,
+                         "Sha256":  "92d535dd1653250da662c3a5b92943c8030651176c81a509cd74e2b4bec26cff"
+                     },
+                     {
+                         "Nome":  "XLParser.dll",
+                         "Tamanho":  54272,
+                         "Sha256":  "e154e3e5eb2193f55f65f13f6d7061fbb1b33e02ff90e7905694991538aea9a7"
+                     }
+                 ]
+}
