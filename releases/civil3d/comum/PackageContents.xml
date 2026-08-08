@@ -1,4 +1,4 @@
-<?xml Version="1.1.4" encoding="utf-8" ?>
+<?xml Version="1.1.5" encoding="utf-8" ?>
 <!-- Autoload bundle do Civil 3D. Coloque a pasta .bundle inteira em:
        %ProgramFiles%\Autodesk\ApplicationPlugins\   (todos os usuarios, via instalador)
      ou %APPDATA%\Autodesk\ApplicationPlugins\        (so o usuario, via deploy.bat)
@@ -12,7 +12,7 @@
        Civil 3D 2027 = R26.0 (.NET 10)             -> Contents/2027
      Gere os binarios com tools\build_all.bat (compila so o que estiver instalado). -->
 <ApplicationPackage SchemaVersion="1.0"
-                    Version="1.1.4"
+                    Version="1.1.5"
                     ProductCode="{7C3E2A10-5B44-4E9A-9C21-A1B2C3D4E5F6}"
                     Name="SmartBIM Civil 3D"
                     Description="Ferramentas SmartBIM para Civil 3D"
@@ -24,7 +24,7 @@
   <Components Description="Civil 3D 2024">
     <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R24.3" SeriesMax="R24.3" />
     <ComponentEntry AppName="SmartBIM.Civil3D"
-                    Version="1.1.4"
+                    Version="1.1.5"
                     ModuleName="./Contents/2024/SmartBIM.Civil3D.dll"
                     AppType=".NET"
                     LoadOnAutoCADStartup="True"
@@ -132,7 +132,7 @@
   <Components Description="Civil 3D 2025">
     <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R25.0" SeriesMax="R25.0" />
     <ComponentEntry AppName="SmartBIM.Civil3D"
-                    Version="1.1.4"
+                    Version="1.1.5"
                     ModuleName="./Contents/2025/SmartBIM.Civil3D.dll"
                     AppType=".NET"
                     LoadOnAutoCADStartup="True"
@@ -240,7 +240,7 @@
   <Components Description="Civil 3D 2026">
     <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R25.1" SeriesMax="R25.1" />
     <ComponentEntry AppName="SmartBIM.Civil3D"
-                    Version="1.1.4"
+                    Version="1.1.5"
                     ModuleName="./Contents/2026/SmartBIM.Civil3D.dll"
                     AppType=".NET"
                     LoadOnAutoCADStartup="True"
@@ -348,7 +348,7 @@
   <Components Description="Civil 3D 2027">
     <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R26.0" SeriesMax="R26.0" />
     <ComponentEntry AppName="SmartBIM.Civil3D"
-                    Version="1.1.4"
+                    Version="1.1.5"
                     ModuleName="./Contents/2027/SmartBIM.Civil3D.dll"
                     AppType=".NET"
                     LoadOnAutoCADStartup="True"

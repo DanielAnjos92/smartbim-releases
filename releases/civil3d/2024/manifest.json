@@ -1,5 +1,5 @@
 {
-    "Versao":  "1.1.4",
+    "Versao":  "1.1.5",
     "Arquivos":  [
                      {
                          "Nome":  "ClosedXML.dll",
@@ -33,8 +33,8 @@
                      },
                      {
                          "Nome":  "SmartBIM.Civil3D.dll",
-                         "Tamanho":  2804224,
-                         "Sha256":  "9f6c606b52fa89d7214283a9b2d10b96105baf87d0ba370602869e293d70038b"
+                         "Tamanho":  2804736,
+                         "Sha256":  "666f4dc2732800d4bb19ea421d8a82e8b86d2a352e3a96aa13c7a38bf4b51486"
                      },
                      {
                          "Nome":  "System.Buffers.dll",
