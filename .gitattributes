@@ -1,0 +1,10 @@
+# Este repositorio guarda ARTEFATOS DE RELEASE, nao codigo-fonte.
+#
+# Os plugins baixam cada arquivo e conferem o SHA-256 contra o manifest.json.
+# Com core.autocrlf=true (padrao no Windows) o git normalizava CRLF -> LF ao
+# gravar o blob, entao o que o raw.githubusercontent servia NAO era byte a byte
+# o arquivo que gerou o hash: o PackageContents.xml chegava com 455 bytes a
+# menos e a atualizacao abortava dizendo "arquivo corrompido".
+#
+# -text desliga qualquer conversao: o que entra e exatamente o que sai.
+* -text
