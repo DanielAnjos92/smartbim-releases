@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "SmartBIM.Civil3D/1.1.2": {
+      "SmartBIM.Civil3D/1.1.3": {
         "dependencies": {
           "ClosedXML": "0.102.3",
           "Newtonsoft.Json": "13.0.3"
@@ -83,7 +83,7 @@
     }
   },
   "libraries": {
-    "SmartBIM.Civil3D/1.1.2": {
+    "SmartBIM.Civil3D/1.1.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
