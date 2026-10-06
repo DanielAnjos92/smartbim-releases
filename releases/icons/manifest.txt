@@ -236,6 +236,8 @@ icon_similares_familia_vista.png
 icon_similares_familia_vista_small.png
 icon_similares_vista.png
 icon_similares_vista_small.png
+icon_spda_esfera.png
+icon_spda_esfera_small.png
 icon_substituir_material.png
 icon_substituir_material_small.png
 icon_suporte.png
