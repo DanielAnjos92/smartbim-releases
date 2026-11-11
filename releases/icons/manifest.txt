@@ -190,6 +190,8 @@ icon_plataforma_terraplenagem.png
 icon_plataforma_terraplenagem_small.png
 icon_propagar_armacao.png
 icon_propagar_armacao_small.png
+icon_publish.png
+icon_publish_small.png
 icon_quantitativo_gc.png
 icon_quantitativo_gc_small.png
 icon_quantitativo_rapido.png
